@@ -21,7 +21,7 @@ header {
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-        
+
 }
 
 
@@ -43,7 +43,7 @@ nav {
         padding-top: 15vh;
         height: auto;
         width: 100%;
-        
+
 }
 
 .cover {
@@ -176,7 +176,7 @@ main {
 
 .about_1,
 .about_2 {
-        width: 70%;
+        width: 90%;
         margin: auto;
 }
 
@@ -208,22 +208,12 @@ main {
 
 
 #about .image {
-        width: 60%;
+        width: 70%;
         height: 400px;
         margin: auto;
         margin-bottom: 50px;
         padding: 10px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-}
-
-.about_1 .image:hover {
-        transform: scale(1.1) rotate(2deg);
-        transition: all .6s;
-}
-
-.about_2 .image:hover {
-        transform: scale(1.1) rotate(-2deg);
-        transition: all .6s;
 }
 
 .about_1 .image img,
@@ -251,10 +241,7 @@ main {
         color: #00DF82;
 }
 
-
-
 #products {
-
         padding: 15vh 0 40px 0;
         width: 100%;
         height: 100%;
@@ -289,7 +276,7 @@ main {
 }
 
 .product_child_1 p {
-        width: 50%;
+        width: 70%;
         font-size: 1.2rem;
         font-family: 'satoshi', sans-serif;
         margin: 10px auto;
@@ -298,16 +285,17 @@ main {
 }
 
 .product_element {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 80%;
+        width: 100%;
         margin: auto;
         margin-top: 40px;
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        justify-content: center;
+        gap: 10px;
 }
 
 .product_element .image {
-        width: 30%;
+        width: 100%;
         height: 500px;
         margin: auto;
         margin-bottom: 50px;
@@ -361,14 +349,14 @@ main {
 
 #contacts {
         width: 100%;
-        height: 100vh;
+        min-height: 100vh;
         padding-top: 15vh;
 }
 
 .title {
         width: 70%;
         margin: auto;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
 }
 
 #contacts h2 {
@@ -379,11 +367,11 @@ main {
 }
 
 form {
-        width: 30%;
+        width: 50%;
         margin: auto;
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 20px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
         padding: 10px;
         background-color: #03624C;
@@ -416,7 +404,7 @@ form button {
         margin: auto;
 }
 
-form button:hover{
+form button:hover {
         width: 90%;
 }
 
@@ -468,852 +456,810 @@ footer p {
         font-family: 'satoshi', sans-serif;
 }
 
-.scroll{
+.scroll {
         animation: apper linear;
         -webkit-animation: apper linear;
         animation-timeline: view();
-        animation-range: entry  0% cover 40%;
+        animation-range: entry 0% cover 40%;
 }
 
-@keyframes apper{
-        from{
+@keyframes apper {
+        from {
                 opacity: 0.7;
                 scale: .7;
         }
-        to{
+
+        to {
                 opacity: 1;
                 scale: 1;
         }
 }
 
 
-.btn_menu{
+.btn_menu {
         display: none;
 }
 
-.menu_nav{
+.menu_nav {
         display: none;
 }
+/*=============================================================*/
 
-
-/*============================ ===============================*/
-@media screen and (min-width:980px) and (max-width:1024px){
-
-
-.number{
-        display: none;
-}
-.about_1,
-.about_2 {
-        width: 70%;
-        margin: auto;
-}
-
-#about p {
-        width: 90%;
-
-}
-
-
-#about .image {
-        width: 80%;
-
-}
-
-
-.product_child_1 p {
-        width: 90%;
-        font-size: 1.2rem;
-        font-family: 'satoshi', sans-serif;
-        margin: 10px auto;
-        color: #FFFFFF;
-        text-align: center;
-}
-
-.product_element {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 400px 400px;
-        gap: 20px;
-}
-
-.product_element .image {
-        width: 100%;
-}
-
-#contacts {
-        width: 100%;
-        height: 100vh;
-        padding-top: 15vh;
-}
-
-.title {
-        width: 50%;
-}
-
-
-form {
-        width: 50%;
-}
-
-} 
-
-/*============================= Laptop =========================================*/
-
-@media screen and (min-width:768px) and (max-width:979px){
-        nav {
-        background: #03624C;
-        background: radial-gradient(circle, #03624c 0%, rgba(3, 15, 15, 1) 100%, #00df82 100%);
-        width: 100%;
-        height: 10vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 1000;
-        padding: 0 50px;
-}
-
-.section_header {
-        padding-top: 15vh;
-        height: auto;
-        width: 100%;
-        
-}
-
-.number{
-        display: none;
-}
-.media_container ul:last-child {
-        display: none;
-}
-
-
-
-#home_info {
-        width: 100%;
-        margin: 10px 0;
-}
-
-#home_info h1 {
-        font-family: 'Melodrama', serif;
-        color: #FFFFFF;
-        font-size: 4rem;
-        text-align: center;
-}
-
-#home_info h2 {
-        font-family: 'Be Vietnam Pro', sans-serif;
-        color: #00DF82;
-        font-size: 2.5rem;
-        text-align: center;
-        margin-top: 20px;
-}
-
-#home_info p {
-        width: 95%;
-        padding: 0 20px;
-        text-align: start;
-        margin-top: 50px;
-}
-
-#calling {
-        margin-top: 70px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-}
-
-#calling a {
-        width: 40%;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-}
-
-
-
-#about {
-        width: 100%;
-        height: auto;
-        background-color: white;
-        padding-top: 30px;
-        padding-top: 10vh;
-        padding: 0 30px;
-
-}
-
-.about_1,
-.about_2 {
-        width: 100%;
-        margin: auto;
-}
-
-
-#about p {
-        width: 100%;
-        text-align: start;
-}
-
-
-#about .image {
-        width: 100%;
-}
-
-#products {
-        padding: 0 30px;
-        padding-top: 100px;
-}
-
-.product_child_1 {
-        width: 100%;
-}
-
-.product_child_1 p {
-        width: 100%;
-}
-
-.product_element {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        width: 100%;
-        margin: auto;
-        margin-top: 40px;
-}
-
-.product_element .image {
-        width: 100%
-}
-
-.infos a {
-        text-decoration: none;
-        font-size: 1.1rem;
-}
-
-.infos a:hover {
-        width: 45%;
-}
-
-#contacts {
-        width: 100%;
-        height: 100vh;
-        padding-top: 10vh;
-}
-
-.title {
-        width: 100%;
-        margin: auto;
-        margin-bottom: 30px;
-}
-
-
-form {
-        width: 70%;
-}
-} 
-
-
-/*===================== Tablette =====================*/
-@media screen and (min-width:481px) and (max-width:767px) {
-        nav , #contact{
-        height: 10vh;
-}
-
-.section_header {
-        padding-top: 5vh;
-        height: auto;
-        width: 100%;
-}
-
-.cover {
-        padding-top: 15vh;
-}
-
-.btn_menu{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-}
-
-.btn_menu i{
-        color: #FFFFFF;
-        transition: color .5s;
-        -webkit-transition: color .5s;
-        -moz-transition: color .5s;
-        -ms-transition: color .5s;
-        -o-transition: color .5s;
-        font-size: 2rem;
-}
-.btn_menu:hover i{
-        color: #a3e33a;
-}
-
-.menu_nav{
-        display: none;
-        flex-direction: column;
-        align-items: start;
-        justify-content: start;
-        position: absolute;
-        gap: 20px;
-        top: 10vh;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 350px;
-        background-color: #0000005b;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-}
-
-.menu_nav li{
-        list-style: none;
-        width: 100%;
-        display: flex;
-        padding: 8px 0;
-        padding-left: 40%;
-        
-}
-
-.menu_nav li a{
-        text-decoration: none;
-        color: #FFFFFF;
-        font-family: 'satoshi', sans-serif;
-        font-size: 1.1rem;
-
-}
-
-.menu_nav.open {
-        display: flex; 
-}
-
-.reseaux_mobile{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
-        margin: auto;
-}
-
-.media_container{
-        display: none;
-}
-
-.logo img {
-        width: 150px;
-}
-
-.menu_nav .active_bar_mobile{
-        color: #a3e33a;
-}
-
-#home_info {
-        width: 100%;
-        padding: 0 30px;
-}
-
-#home_info h1 {
-        font-family: 'Melodrama', serif;
-        color: #FFFFFF;
-        text-align: center;
-        margin-bottom: 10px;
-}
-
-#home_info h2 {
-        font-family: 'Be Vietnam Pro', sans-serif;
-        color: #00DF82;
-        font-size: 2rem;
-        text-align: center;
-}
-
-#home_info p {
-        width: 100%;
-        margin: auto;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        color: white;
-        font-size: 1.2rem;
-        text-align: start;
-        font-family: 'satoshi', sans-serif;
-}
-
-#calling {
-        margin-top: 80px;
-        flex-direction: column;
-        gap: 30px;
-}
-
-#calling a {
-        width: 80%;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-}
-
-#calling a:hover {
-        background-color: #03624C;
-        color: white;
-}
-
-main {
-        width: 100%;
-        height: 100%;
-        background-color: white;
-}
-
-#about {
-        width: 100%;
-        height: auto;
-        background-color: white;
-        padding: 0 30px;
-        padding-top: 50px;
-}
-
-.about_1,
-.about_2 {
-        width: 100%;
-        margin: auto;
-}
-
-#about h2 {
-        font-family: 'Be Vietnam Pro', sans-serif;
-        color: #00DF82;
-        font-size: 3rem;
-        text-align: center;
-}
-
-#about p {
-        width: 100%;
-        margin: auto;
-        color: gray;
-        font-size: 1.2rem;
-        text-align: start;
-        font-family: 'satoshi', sans-serif;
-        margin: 40px auto;
-        font-weight: 600;
-}
-
-
-#about h3 {
-        font-family: 'Be Vietnam Pro', sans-serif;
-        color: #03624C;
-        font-size: 2rem;
-        text-align: center;
-}
-
-
-#about .image {
-        width: 100%;
-}
-
-.about_1 .image:hover {
-        transform: scale(0) rotate(0deg);
-        transition: all .6s;
-        -webkit-transform: scale(0) rotate(0deg);
-        -moz-transform: scale(0) rotate(0deg);
-        -ms-transform: scale(0) rotate(0deg);
-        -o-transform: scale(0) rotate(0deg);
-}
-
-.about_2 .image:hover {
-        transform: scale(0) rotate(0deg);
-        transition: all .6s;
-        -webkit-transform: scale(0) rotate(0deg);
-        -moz-transform: scale(0) rotate(0deg);
-        -ms-transform: scale(0) rotate(0deg);
-        -o-transform: scale(0) rotate(0deg);
-}
-
-
-#about a {
-        font-size: 1rem;
-}
-
-#about a svg {
-        color: #00DF82;
-}
-
-#products {
-        padding-top: 5vh;
-}
-
-.product_child_1 {
-        width: 100%;
-}
-
-.product_child_1 h2 {
-        font-family: 'Be Vietnam Pro', sans-serif;
-        color: #FFFFFF;
-        font-size: 3rem;
-        text-align: center;
-}
-
-.product_child_1 span {
-        font-size: 1.2rem;
-        padding: 0 30px;
-}
-
-.product_child_1 p {
-        width: 100%;
-        text-align: start;
-        padding: 0 30px;
-}
-
-.product_element {
-        padding: 0 30px;
-        width: 100%;
-        flex-direction: column;
-}
-
-.product_element .image {
-        width: 100%;
-}
-
-.infos a {
-        text-decoration: none;
-}
-
-#contacts {
-        width: 100%;
-        height: 100vh;
-        padding: 0 30px;
-        padding-top: 5vh;
-
-}
-
-.title {
-        width: 100%;
-        margin-bottom: 30px;
-}
-
-#contacts h2 {
-        font-family: 'Be Vietnam Pro', sans-serif;
-        color: #03624C;
-        font-size: 1.5rem;
-        text-align: center;
-}
-
-form {
-        width: 100%;
-}
-
-} 
-
-/*=============MOBILE RESPONSIVE========*/
+/*=============================================================*/
 @media (max-width: 480px) {
 
-nav {
-        height: 7vh;
-}
-
-.section_header {
-        padding-top: 5vh;
-        height: auto;
-        width: 100%;
-}
-
-.cover {
-        padding-top: 5vh;
-}
-
-#contact {
-        height: 7vh;
-}
-
-.btn_menu{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-}
-
-.btn_menu i{
-        color: #FFFFFF;
-        transition: color .5s;
-        -webkit-transition: color .5s;
-        -moz-transition: color .5s;
-        -ms-transition: color .5s;
-        -o-transition: color .5s;
-        font-size: 1.5rem;
-}
-.btn_menu:hover i{
-        color: #a3e33a;
-}
-
-.menu_nav{
-        display: none;
-        flex-direction: column;
-        align-items: start;
-        justify-content: start;
-        position: absolute;
-        gap: 30px;
-        top: 5vh;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 350px;
-        background-color: #0000005b;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-}
-
-.menu_nav li{
-        list-style: none;
-        width: 100%;
-        display: flex;
-        padding: 8px 0;
-        padding-left: 40%;
-        
-}
-
-.menu_nav li a{
-        text-decoration: none;
-        color: #FFFFFF;
-        font-family: 'satoshi', sans-serif;
-        font-size: 1.1rem;
-
-}
-
-.menu_nav.open {
-        display: flex; 
-}
-
-.reseaux_mobile{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
-        margin: auto;
-}
-
-.media_container{
-        display: none;
-}
-
-.logo img {
-        width: 100px;
-}
-
-.menu_nav .active_bar_mobile{
-        color: #a3e33a;
-}
-
-#home_info {
-        width: 100%;
-        padding: 0 30px;
-}
-
-#home_info h1 {
-        font-family: 'Melodrama', serif;
-        color: #FFFFFF;
-        text-align: center;
-}
-
-#home_info h2 {
-        font-family: 'Be Vietnam Pro', sans-serif;
-        color: #00DF82;
-        font-size: 2rem;
-        text-align: start;
-}
-
-#home_info p {
-        width: 100%;
-        margin: auto;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        color: white;
-        font-size: 1.2rem;
-        text-align: start;
-        font-family: 'satoshi', sans-serif;
-}
-
-#calling {
-        margin-top: 50px;
-        flex-direction: column;
-        gap: 30px;
-}
-
-#calling a {
-        width: 80%;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-}
-
-#calling a:hover {
-        background-color: #03624C;
-        color: white;
-}
-
-main {
-        width: 100%;
-        height: 100%;
-        background-color: white;
-}
-
-#about {
-        width: 100%;
-        height: auto;
-        background-color: white;
-        padding: 0 30px;
-        padding-top: 50px;
-}
-
-.about_1,
-.about_2 {
-        width: 100%;
-        margin: auto;
-}
-
-#about h2 {
-        font-family: 'Be Vietnam Pro', sans-serif;
-        color: #00DF82;
-        font-size: 3rem;
-        text-align: center;
-}
-
-#about p {
-        width: 100%;
-        margin: auto;
-        color: gray;
-        font-size: 1.2rem;
-        text-align: start;
-        font-family: 'satoshi', sans-serif;
-        margin: 40px auto;
-        font-weight: 600;
-}
-
-#about h3 {
-        font-family: 'Be Vietnam Pro', sans-serif;
-        color: #03624C;
-        font-size: 2rem;
-        text-align: center;
-}
-
-#about .image {
-        width: 100%;
-}
-
-.about_1 .image:hover {
-        transform: scale(0) rotate(0deg);
-        transition: all .6s;
-        -webkit-transform: scale(0) rotate(0deg);
-        -moz-transform: scale(0) rotate(0deg);
-        -ms-transform: scale(0) rotate(0deg);
-        -o-transform: scale(0) rotate(0deg);
-}
-
-.about_2 .image:hover {
-        transform: scale(0) rotate(0deg);
-        transition: all .6s;
-        -webkit-transform: scale(0) rotate(0deg);
-        -moz-transform: scale(0) rotate(0deg);
-        -ms-transform: scale(0) rotate(0deg);
-        -o-transform: scale(0) rotate(0deg);
-}
-
-#about a {
-        font-size: 1rem;
-}
-
-#about a svg {
-        color: #00DF82;
-}
-
-#products {
-        padding-top: 5vh;
-}
-
-.product_child_1 {
-        width: 100%;
-}
-
-.product_child_1 h2 {
-        font-family: 'Be Vietnam Pro', sans-serif;
-        color: #FFFFFF;
-        font-size: 3rem;
-        text-align: center;
-}
-
-.product_child_1 span {
-        font-size: 1.2rem;
-        padding: 0 30px;
-}
-
-.product_child_1 p {
-        width: 100%;
-        text-align: start;
-        padding: 0 30px;
-}
-
-.product_element {
-        padding: 0 30px;
-        width: 100%;
-        flex-direction: column;
-}
-
-.product_element .image {
-        width: 100%;
-}
-
-.infos a {
-        text-decoration: none;
-}
-
-#contacts {
-        width: 100%;
-        height: 100vh;
-        padding: 0 30px;
-        padding-top: 5vh;
-
-}
-
-.title {
-        width: 100%;
-        margin-bottom: 30px;
-}
-
-#contacts h2 {
-        font-family: 'Be Vietnam Pro', sans-serif;
-        color: #03624C;
-        font-size: 1.5rem;
-        text-align: center;
-}
-
-form {
-        width: 100%;
-}
-
-.scroll{
-        animation: apper linear;
-        -webkit-animation: apper linear;
-        animation-timeline: view();
-        animation-range: entry  0% cover 40%;
-}
-
-@keyframes apper{
-        from{
-                opacity: 0.7;
-                scale: .7;
+        nav {
+                height: 7vh;
         }
-        to{
-                opacity: 1;
-                scale: 1;
+
+        .section_header {
+                padding-top: 5vh;
+                height: auto;
+                width: 100%;
+        }
+
+        .cover {
+                padding-top: 5vh;
+        }
+
+        #contact {
+                height: 7vh;
+        }
+
+        .btn_menu {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+        }
+
+        .btn_menu i {
+                color: #FFFFFF;
+                transition: color .5s;
+                -webkit-transition: color .5s;
+                -moz-transition: color .5s;
+                -ms-transition: color .5s;
+                -o-transition: color .5s;
+                font-size: 1.5rem;
+        }
+
+        .btn_menu:hover i {
+                color: #a3e33a;
+        }
+
+        .menu_nav {
+                display: none;
+                flex-direction: column;
+                align-items: start;
+                justify-content: start;
+                position: absolute;
+                gap: 20px;
+                top: 5vh;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 350px;
+                background-color: #0000005b;
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+        }
+
+        .menu_nav li {
+                list-style: none;
+                width: 100%;
+                display: flex;
+                padding: 8px 0;
+                padding-left: 40%;
+
+        }
+
+        .menu_nav li a {
+                text-decoration: none;
+                color: #FFFFFF;
+                font-family: 'satoshi', sans-serif;
+                font-size: 1.1rem;
+
+        }
+
+        .menu_nav.open {
+                display: flex;
+        }
+
+        .reseaux_mobile {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 30px;
+                margin: auto;
+        }
+
+        .media_container {
+                display: none;
+        }
+
+        .logo img {
+                width: 100px;
+        }
+
+        .menu_nav .active_bar_mobile {
+                color: #a3e33a;
+        }
+
+        #home_info {
+                width: 100%;
+                padding: 0 30px;
+        }
+
+        #home_info h1 {
+                font-family: 'Melodrama', serif;
+                color: #FFFFFF;
+                text-align: start;
+                font-size: 3.5rem;
+        }
+
+        #home_info h2 {
+                font-family: 'Be Vietnam Pro', sans-serif;
+                color: #00DF82;
+                text-align: start;
+                font-size: 2rem;
+        }
+
+        #home_info p {
+                width: 100%;
+                margin: auto;
+                margin-top: 40px;
+                margin-bottom: 40px;
+                color: white;
+                font-size: 1.2rem;
+                text-align: start;
+                font-family: 'satoshi', sans-serif;
+        }
+
+        #calling {
+                margin-top: 50px;
+                flex-direction: column;
+                gap: 10px;
+        }
+
+        #calling a {
+                width: 80%;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+        }
+
+        #calling a:hover {
+                background-color: #03624C;
+                color: white;
+        }
+
+        main {
+                width: 100%;
+                height: 100%;
+                background-color: white;
+        }
+
+        #about {
+                width: 100%;
+                height: auto;
+                background-color: white;
+                padding: 0 30px;
+                padding-top: 50px;
+        }
+
+        .about_1,
+        .about_2 {
+                width: 100%;
+                margin: auto;
+        }
+
+        #about h2 {
+                font-family: 'Be Vietnam Pro', sans-serif;
+                color: #00DF82;
+                font-size: 3rem;
+                text-align: center;
+        }
+
+        #about p {
+                width: 100%;
+                margin: auto;
+                color: gray;
+                font-size: 1.2rem;
+                text-align: start;
+                font-family: 'satoshi', sans-serif;
+                margin: 40px auto;
+                font-weight: 600;
+        }
+
+        #about h3 {
+                font-family: 'Be Vietnam Pro', sans-serif;
+                color: #03624C;
+                font-size: 2rem;
+                text-align: center;
+        }
+
+        #about .image {
+                width: 100%;
+        }
+
+        .about_1 .image:hover {
+                transform: scale(1) rotate(0deg);
+                transition: all .6s;
+                -webkit-transform: scale(1) rotate(0deg);
+                -moz-transform: scale(1) rotate(0deg);
+                -ms-transform: scale(1) rotate(0deg);
+                -o-transform: scale(1) rotate(0deg);
+        }
+
+        .about_2 .image:hover {
+                transform: scale(1) rotate(0deg);
+                transition: all .6s;
+                -webkit-transform: scale(1) rotate(0deg);
+                -moz-transform: scale(1) rotate(0deg);
+                -ms-transform: scale(1) rotate(0deg);
+                -o-transform: scale(1) rotate(0deg);
+        }
+
+        #about a {
+                font-size: 1rem;
+        }
+
+        #about a svg {
+                color: #00DF82;
+        }
+
+        #products {
+                padding-top: 5vh;
+        }
+
+        .product_child_1 {
+                width: 100%;
+        }
+
+        .product_child_1 h2 {
+                font-family: 'Be Vietnam Pro', sans-serif;
+                color: #FFFFFF;
+                font-size: 3rem;
+                text-align: center;
+        }
+
+        .product_child_1 span {
+                font-size: 1.2rem;
+                padding: 0 30px;
+        }
+
+        .product_child_1 p {
+                width: 100%;
+                text-align: start;
+                padding: 0 30px;
+        }
+
+        .product_element {
+                padding: 0 30px;
+                width: 100%;
+                flex-direction: column;
+        }
+
+        .product_element .image {
+                width: 100%;
+        }
+
+        .infos a {
+                text-decoration: none;
+        }
+
+        #contacts {
+                width: 100%;
+                height: 100vh;
+                padding: 0 30px;
+                padding-top: 5vh;
+
+        }
+
+        .title {
+                width: 100%;
+                margin-bottom: 30px;
+        }
+
+        #contacts h2 {
+                font-family: 'Be Vietnam Pro', sans-serif;
+                color: #03624C;
+                font-size: 1.5rem;
+                text-align: center;
+        }
+
+        form {
+                width: 100%;
+        }
+
+        .scroll {
+                animation: apper linear;
+                -webkit-animation: apper linear;
+                animation-timeline: view();
+                animation-range: entry 0% cover 40%;
+        }
+
+        @keyframes apper {
+                from {
+                        opacity: 0.7;
+                        scale: .7;
+                }
+
+                to {
+                        opacity: 1;
+                        scale: 1;
+                }
         }
 }
 
+/*=============================================================*/
+@media (min-width: 481px) and (max-width: 768px) {
+
+        nav {
+                height: 7vh;
+        }
+
+        .section_header {
+                padding-top: 5vh;
+                height: auto;
+                width: 100%;
+        }
+
+        .cover {
+                padding-top: 5vh;
+        }
+
+        #contact {
+                height: 7vh;
+        }
+
+        .btn_menu {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+        }
+
+        .btn_menu i {
+                color: #FFFFFF;
+                transition: color .5s;
+                -webkit-transition: color .5s;
+                -moz-transition: color .5s;
+                -ms-transition: color .5s;
+                -o-transition: color .5s;
+                font-size: 1.5rem;
+        }
+
+        .btn_menu:hover i {
+                color: #a3e33a;
+        }
+
+        .menu_nav {
+                display: none;
+                flex-direction: column;
+                align-items: start;
+                justify-content: start;
+                position: absolute;
+                gap: 20px;
+                top: 5vh;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 350px;
+                background-color: #0000005b;
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+        }
+
+        .menu_nav li {
+                list-style: none;
+                width: 100%;
+                display: flex;
+                padding: 8px 0;
+                padding-left: 40%;
+
+        }
+
+        .menu_nav li a {
+                text-decoration: none;
+                color: #FFFFFF;
+                font-family: 'satoshi', sans-serif;
+                font-size: 1.1rem;
+        }
+
+        .menu_nav.open {
+                display: flex;
+        }
+
+        .reseaux_mobile {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 30px;
+                margin: auto;
+        }
+
+        .media_container {
+                display: none;
+        }
+
+        .logo img {
+                width: 100px;
+        }
+
+        .menu_nav .active_bar_mobile {
+                color: #a3e33a;
+        }
+
+        #home_info {
+                width: 100%;
+                padding: 0 20px;
+        }
+
+        #home_info h1 {
+                font-family: 'Melodrama', serif;
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 3.5rem;
+                margin-top: 10rem;
+        }
+
+        #home_info h2 {
+                font-family: 'Be Vietnam Pro', sans-serif;
+                color: #00DF82;
+                text-align: center;
+                font-size: 2rem;
+                margin-top: 1rem;
+        }
+
+        #home_info p {
+                width: 90%;
+                margin: auto;
+                margin-top: 1.2rem;
+                margin-bottom: 1.2rem;
+                color: white;
+                font-size: 1.2rem;
+                text-align: start;
+                font-family: 'satoshi', sans-serif;
+        }
+
+        #calling {
+                margin-top: 70px;
+                flex-direction: column;
+                gap: 20px;
+        }
+
+        #calling a {
+                width: 80%;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+        }
+
+        #calling a:hover {
+                background-color: #03624C;
+                color: white;
+        }
+
+        main {
+                width: 100%;
+                height: 100%;
+                background-color: white;
+        }
+
+        #about {
+                width: 100%;
+                height: auto;
+                background-color: white;
+                padding: 0 30px;
+                padding-top: 50px;
+        }
+
+        .about_1,
+        .about_2 {
+                width: 100%;
+                margin: auto;
+        }
+
+        #about h2 {
+                font-family: 'Be Vietnam Pro', sans-serif;
+                color: #00DF82;
+                font-size: 3rem;
+                text-align: center;
+        }
+
+        #about p {
+                width: 100%;
+                margin: auto;
+                color: gray;
+                font-size: 1.2rem;
+                text-align: start;
+                font-family: 'satoshi', sans-serif;
+                margin: 40px auto;
+                font-weight: 600;
+        }
+
+        #about h3 {
+                font-family: 'Be Vietnam Pro', sans-serif;
+                color: #03624C;
+                font-size: 2rem;
+                text-align: center;
+        }
+
+        #about .image {
+                width: 100%;
+        }
+
+        .about_1 .image:hover {
+                transform: scale(1) rotate(0deg);
+                transition: all .6s;
+                -webkit-transform: scale(1) rotate(0deg);
+                -moz-transform: scale(1) rotate(0deg);
+                -ms-transform: scale(1) rotate(0deg);
+                -o-transform: scale(1) rotate(0deg);
+        }
+
+        .about_2 .image:hover {
+                transform: scale(1) rotate(0deg);
+                transition: all .6s;
+                -webkit-transform: scale(1) rotate(0deg);
+                -moz-transform: scale(1) rotate(0deg);
+                -ms-transform: scale(1) rotate(0deg);
+                -o-transform: scale(1) rotate(0deg);
+        }
+
+        #about a {
+                font-size: 1rem;
+        }
+
+        #about a svg {
+                color: #00DF82;
+        }
+
+        #products {
+                padding-top: 5vh;
+        }
+
+        .product_child_1 {
+                width: 100%;
+        }
+
+        .product_child_1 h2 {
+                font-family: 'Be Vietnam Pro', sans-serif;
+                color: #FFFFFF;
+                font-size: 3rem;
+                text-align: center;
+        }
+
+        .product_child_1 span {
+                font-size: 1.2rem;
+                padding: 0 30px;
+        }
+
+        .product_child_1 p {
+                width: 100%;
+                text-align: start;
+                padding: 0 30px;
+        }
+
+        .product_element {
+                padding: 0 30px;
+                width: 100%;
+                flex-direction: column;
+        }
+
+        .product_element .image {
+                width: 100%;
+        }
+
+        .infos a {
+                text-decoration: none;
+        }
+
+        #contacts {
+                width: 100%;
+                height: 100vh;
+                padding: 0 30px;
+                padding-top: 5vh;
+
+        }
+
+        .title {
+                width: 100%;
+                margin-bottom: 30px;
+        }
+
+        #contacts h2 {
+                font-family: 'Be Vietnam Pro', sans-serif;
+                color: #03624C;
+                font-size: 1.5rem;
+                text-align: center;
+        }
+
+        form {
+                width: 100%;
+        }
+
+        .scroll {
+                animation: apper linear;
+                -webkit-animation: apper linear;
+                animation-timeline: view();
+                animation-range: entry 0% cover 40%;
+        }
+
+        @keyframes apper {
+                from {
+                        opacity: 0.7;
+                        scale: .7;
+                }
+
+                to {
+                        opacity: 1;
+                        scale: 1;
+                }
+        }
 }
+
+/*=============================================================*/
+@media (min-width: 769px) and (max-width: 1024px) {
+        nav {
+                background: #03624C;
+                background: radial-gradient(circle, #03624c 0%, rgba(3, 15, 15, 1) 100%, #00df82 100%);
+                width: 100%;
+                height: 10vh;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 1000;
+                padding: 0 50px;
+        }
+
+        .section_header {
+                padding-top: 15vh;
+                height: auto;
+                width: 100%;
+
+        }
+
+        .number {
+                display: none;
+        }
+
+        .media_container ul:last-child {
+                display: none;
+        }
+
+        #home_info {
+                width: 100%;
+                margin: 10px 0;
+        }
+
+        #home_info h1 {
+                font-family: 'Melodrama', serif;
+                color: #FFFFFF;
+                font-size: 4rem;
+                text-align: center;
+        }
+
+        #home_info h2 {
+                font-family: 'Be Vietnam Pro', sans-serif;
+                color: #00DF82;
+                font-size: 3rem;
+                text-align: center;
+                margin-top: 20px;
+        }
+
+        #home_info p {
+                width: 95%;
+                padding: 0 20px;
+                text-align: start;
+                margin-top: 50px;
+                font-size: 1.5rem;
+        }
+
+        #calling {
+                margin-top: 70px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+        }
+
+        #calling a {
+                width: 40%;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+        }
+
+        #about {
+                width: 100%;
+                height: auto;
+                background-color: white;
+                padding-top: 30px;
+                padding-top: 10vh;
+                padding: 0 30px;
+        }
+
+        .about_1,
+        .about_2 {
+                width: 100%;
+                margin: auto;
+        }
+
+        #about p {
+                width: 100%;
+                text-align: start;
+        }
+
+        #about .image {
+                width: 100%;
+        }
+
+        #products {
+                padding: 0 30px;
+                padding-top: 100px;
+        }
+
+        .product_child_1 {
+                width: 100%;
+        }
+
+        .product_child_1 p {
+                width: 100%;
+        }
+
+        .product_element {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                width: 80%;
+                margin: auto;
+                margin-top: 40px;
+        }
+
+        .product_element .image {
+                width: 100%
+        }
+
+        .infos a {
+                text-decoration: none;
+                font-size: 1.1rem;
+        }
+
+        .infos a:hover {
+                width: 45%;
+        }
+
+        #contacts {
+                width: 100%;
+                height: 100vh;
+                padding-top: 10vh;
+        }
+
+        .title {
+                width: 100%;
+                margin: auto;
+                margin-bottom: 30px;
+        }
+
+        form {
+                width: 70%;
+        }
+
+}
+
