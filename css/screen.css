@@ -1,0 +1,448 @@
+:root {
+        --green: #03624C;
+        --black: #030F0F;
+        --lightgreen: #a3e33a;
+}
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+html {
+        scroll-behavior: smooth;
+}
+
+header {
+        width: 100%;
+        height: 100vh;
+        background: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGZmYmllazUyN3pwcXIxemY1YXRpcHpkdmZiaWYwZDduajE0d29oZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/U4ExkAvRpVQGB0NMe0/giphy.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+                position: relative;
+
+}
+
+
+
+nav {
+        background: #03624C;
+        background: radial-gradient(circle, #03624c 0%, rgba(3, 15, 15, 1) 100%, rgba(0, 223, 130, 1) 100%);
+        width: 100%;
+        height: 10vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        padding: 0 50px;
+}
+
+.section_header {
+        padding-top: 15vh;
+        height: 85vh;
+        width: 100%;
+        
+}
+
+.cover {
+        padding-top: 15vh;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        background: radial-gradient(circle, rgba(3, 98, 76, 0.16) 0%, rgba(3, 15, 15, 0.16) 100%, rgba(0, 223, 130, 0.16) 100%);
+        backdrop-filter: blur(10px);
+}
+
+#contact {
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+.media_container a {
+        color: white;
+        text-decoration: none;
+        font-family: 'Satoshi', sans-serif;
+        font-size: 1.1rem;
+}
+
+.media_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+}
+
+.media {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+}
+
+.media li {
+        list-style: none;
+}
+
+
+#nav_bar {
+        height: 10vh;
+        width: 100%;
+        margin-top: 20px;
+}
+
+.logo img {
+        width: 150px;
+}
+
+.media .active_bar {
+        color: var(--lightgreen);
+}
+
+#products {
+
+        padding: 15vh 0 40px 0;
+        width: 100%;
+        height: 100%;
+        background: #03624C;
+        background: #03624C;
+        background: radial-gradient(circle, rgba(3, 98, 76, 1) 0%, rgba(3, 15, 15, 1) 100%, rgba(0, 223, 130, 1) 100%);
+}
+
+.product_child_1 {
+        width: 70%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+}
+
+.product_child_1 h2 {
+        font-family: 'Be Vietnam Pro', sans-serif;
+        color: #FFFFFF;
+        font-size: 3.5rem;
+        text-align: center;
+}
+
+.product_child_1 span {
+        font-size: 1.3rem;
+        text-align: center;
+        font-family: 'satoshi', sans-serif;
+        margin: 10px auto;
+        font-weight: 600;
+        color: #00DF82;
+}
+
+.product_child_1 p {
+        width: 50%;
+        font-size: 1.2rem;
+        font-family: 'satoshi', sans-serif;
+        margin: 10px auto;
+        color: #FFFFFF;
+        text-align: center;
+}
+
+.product_element {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+        margin-top: 30px;
+}
+
+.product_element .image {
+        width: 30%;
+        height: 500px;
+        margin: auto;
+        margin-bottom: 50px;
+        padding: 5px;
+        background-color: #FFFFFF;
+        transition: all .5s;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+
+.product_element .image img {
+        height: 340px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: .5s;
+}
+
+.infos {
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+}
+
+.infos strong {
+        color: #03624C;
+        font-size: 1.3rem;
+        text-align: center;
+        font-family: 'satoshi', sans-serif;
+        font-weight: 700;
+}
+
+.infos a {
+        background-color: #03624C;
+        padding: 8px 12px;
+        border-radius: 20px;
+        color: #FFFFFF;
+        font-size: 1rem;
+        text-align: center;
+        font-family: 'satoshi', sans-serif;
+        width: 50%;
+        margin: auto;
+        transition: .5s;
+}
+
+.infos a:hover {
+        width: 45%;
+}
+
+#contacts {
+        width: 100%;
+        height: 100vh;
+        padding-top: 15vh;
+}
+
+.title {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 30px;
+}
+
+#contacts h2 {
+        font-family: 'Be Vietnam Pro', sans-serif;
+        color: #03624C;
+        font-size: 2rem;
+        text-align: center;
+}
+
+form {
+        width: 30%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+        padding: 10px;
+        background-color: #03624C;
+
+}
+
+form input,
+select {
+        height: 50px;
+        border: none;
+        outline: none;
+        font-size: 1rem;
+        font-family: 'satoshi', sans-serif;
+        padding-left: 10px;
+}
+
+form button {
+        text-decoration: none;
+        font-size: 1.2rem;
+        text-align: center;
+        font-family: 'satoshi', sans-serif;
+        background-color: #FFFFFF;
+        padding: 8px 12px;
+        color: #03624C;
+        transition: .5s;
+        border-radius: 14px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin: auto;
+}
+
+form button:hover{
+        width: 90%;
+}
+
+
+
+
+.covers {
+        padding: 40px 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, rgba(3, 98, 76, 0.16) 0%, rgba(3, 15, 15, 0.16) 100%, rgba(0, 223, 130, 0.16) 100%);
+        position: relative;
+        backdrop-filter: blur(10px);
+
+}
+
+footer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGZmYmllazUyN3pwcXIxemY1YXRpcHpkdmZiaWYwZDduajE0d29oZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/U4ExkAvRpVQGB0NMe0/giphy.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+}
+
+footer ul {
+        gap: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        text-align: center;
+        font-family: 'satoshi', sans-serif;
+        list-style: none;
+        margin-bottom: 20px;
+}
+
+footer ul li a {
+        color: #FFFFFF;
+}
+
+footer p {
+        font-size: 1.1rem;
+        text-align: center;
+        color: #FFFFFF;
+        font-family: 'satoshi', sans-serif;
+}
+
+#advantages{
+        width: 100%;
+        height: auto;
+        padding-top: 10vh;
+}
+
+
+.intro h2{
+        font-family: 'Be Vietnam Pro', sans-serif;
+        color: #03624C;
+        font-size: 4rem;
+        text-align: center;
+        margin: 40px auto;
+        width: 70%;
+}
+
+#advantages span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #00DF82;
+        font-size: 1.5rem;
+        text-align: center;
+        font-family: 'satoshi', sans-serif;
+        font-weight: 600;
+}
+
+.intro p {
+        width: 50%;
+        margin: auto;
+        color: gray;
+        font-size: 1.2rem;
+        text-align: center;
+        font-family: 'satoshi', sans-serif;
+        font-weight: 600;
+}
+
+.image_student{
+        width: 60%;
+        height: auto;
+        background-color: #FFFFFF;
+        margin: 40px auto;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.image_student img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;       
+}
+
+.intering h2{
+        font-family: 'Be Vietnam Pro', sans-serif;
+        color: #03624C;
+        font-size: 3rem;
+        text-align: center;
+        margin: 40px auto 10px ;
+        width: 70%;
+}
+
+.intering h3{
+        font-family: 'Be Vietnam Pro', sans-serif;
+        color: #00DF82;
+        font-size: 1.3rem;
+        text-align: center;
+        margin: auto;
+        width: 70%;
+}
+
+#description_avantages{
+        width: 80%;
+        height: auto;
+        background-color: #FFFFFF;
+        margin: 40px auto;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 270px);
+        gap: 50px;
+}
+
+#description_avantages div{
+        background: #03624C;
+        background: radial-gradient(circle, rgba(3, 98, 76, 1) 0%, rgba(3, 15, 15, 1) 100%, rgba(0, 223, 130, 1) 100%);        width: 100%;
+        height: 100%;
+        padding: 20px;
+}
+
+#description_avantages strong{
+        font-family: 'Be Vietnam Pro', sans-serif;
+        color: #00DF82;
+        font-size: 1.3rem;
+        text-align: center;
+}
+
+
+#description_avantages p{
+        color: #FFFFFF;
+        font-size: 1.2rem;
+        text-align: justify;
+        font-family: 'satoshi', sans-serif;
+        margin-top: 20px;
+}
+
+#Educators, #Students{
+        padding-top: 10vh;
+}
+
+.scroll{
+        animation: apper linear;
+        -webkit-animation: apper linear;
+        animation-timeline: view();
+        animation-range: entry  0% cover 40%;
+}
+
+@keyframes apper{
+        from{
+                opacity: 0.7;
+                scale: .7;
+        }
+        to{
+                opacity: 1;
+                scale: 1;
+        }
+}
